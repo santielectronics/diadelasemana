@@ -1,0 +1,39 @@
+def switcher2():
+    diasemana = int(input("Ingresa el dia de la semana (del 1 al 7): "))
+    if diasemana == 1:
+        return "Hoy es Lunes"
+    elif diasemana == 2:
+        return "Hoy es Martes"
+    elif diasemana == 3:
+        return "Hoy es Miercoles"
+    elif diasemana == 4:
+        return "Hoy es Jueves"
+    elif diasemana == 5:
+        return "Hoy es Viernes"
+    elif diasemana == 6:
+        return "Hoy es Sabado"
+    elif diasemana == 7:
+        return "Hoy es Domingo"
+    else:
+        quit('Ese día no tenemos servicio')
+
+def actividad():
+    dia=switcher2()
+    if dia == "Hoy es Lunes":
+        print("Ir al trabajo")
+    elif dia == "Hoy es Martes":
+        print("Ir al gimnasio")
+    elif dia == "Hoy es Miercoles":
+        print("Ir al cine")
+    elif dia == "Hoy es Jueves":
+        print("Ir al parque")
+    elif dia == "Hoy es Viernes":
+        print("Ir a la fiesta")
+    elif dia == "Hoy es Sabado":
+        print("Quedarse en casa")
+    elif dia == "Hoy es Domingo":
+        print("Ir a la iglesia")
+    else:
+        quit("No tienes una actividad")
+
+actividad()
