@@ -1,6 +1,10 @@
+# Se define switcher2()
 def switcher2():
+    # variable para indicar el dia de la semana con un input y un int para convertirlo en numero
     diasemana = int(input("Ingresa el dia de la semana (del 1 al 7): "))
+    # Condicionales para saber el dia de la semana
     if diasemana == 1:
+        # Return para guardar el registro pero no mostrarlo al usuario
         return "Hoy es Lunes"
     elif diasemana == 2:
         return "Hoy es Martes"
@@ -15,10 +19,15 @@ def switcher2():
     elif diasemana == 7:
         return "Hoy es Domingo"
     else:
+        # Se usa quit para terminar el programa y termina con un codigo de error 'Ese dia no tenemos servicio'
         quit('Ese día no tenemos servicio')
 
+
+# Se define actividad()
 def actividad():
-    dia=switcher2()
+    # Se crea la variable dia para guardar en ella el valor de 'return' del codigo anterior
+    dia = switcher2()
+    # Variable para saber que dia es y arrojar la actividad
     if dia == "Hoy es Lunes":
         print("Ir al trabajo")
     elif dia == "Hoy es Martes":
@@ -34,6 +43,9 @@ def actividad():
     elif dia == "Hoy es Domingo":
         print("Ir a la iglesia")
     else:
+        # Se coloca un quit y un codigo de error para indicar que no hay ninguna actividad asignada.
         quit("No tienes una actividad")
 
+
+# Se llama a def actividad()
 actividad()
